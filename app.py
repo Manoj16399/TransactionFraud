@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Financial Fraud Detection Dashboar
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("EA.csv")
+    df = pd.read_csv("Synthetic_Financial_Fraud_Dataset__10k_.csv")
     df.columns = df.columns.str.strip()  # Strip any extra spaces from column names
     return df
 
